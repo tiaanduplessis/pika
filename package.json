@@ -1,0 +1,38 @@
+{
+  "name": "@tiaanduplessis/pika",
+  "version": "1.0.0",
+  "description": "Efficient DOM element selection",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/pika",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/pika",
+  "bugs": "https://github.com/tiaanduplessis/pika",
+  "main": "dist/pika.js",
+  "browser": "dist/pika.js",
+  "jsnext:main": "dist/pika.es.js",
+  "files": ["dist"],
+  "scripts": {
+    "test": "jest",
+    "lint": "standard 'src/**/*.js'",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "bili",
+    "start": "npm run test",
+    "pretest": "npm run format && npm run lint:fix",
+    "format": "prettier --print-width 100 --semi false --single-quote --write 'src/**/*.js'",
+    "precommit": "npm test"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "babel": {
+    "presets": [["env"]]
+  },
+  "devDependencies": {
+    "jest": "^20.0.1",
+    "standard": "^10.0.2",
+    "babel-preset-env": "^1.4.0",
+    "bili": "^0.17.2",
+    "husky": "^0.14.3",
+    "prettier": "~1.5.2"
+  }
+}

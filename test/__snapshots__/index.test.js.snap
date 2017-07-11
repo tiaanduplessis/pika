@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should select DOM elements 1`] = `
+<body>
+  <div
+    class="foo"
+  >
+    <span
+      id="baz"
+    >
+      <button
+        id="bar"
+      >
+        
+      </button>
+    </span>
+  </div>
+</body>
+`;
+
+exports[`should select DOM elements 2`] = `<head />`;
+
+exports[`should select DOM elements 3`] = `
+<div
+  class="foo"
+>
+  <span
+    id="baz"
+  >
+    <button
+      id="bar"
+    >
+      
+    </button>
+  </span>
+</div>
+`;
+
+exports[`should select DOM elements 4`] = `
+<div
+  class="foo"
+>
+  <span
+    id="baz"
+  >
+    <button
+      id="bar"
+    >
+      
+    </button>
+  </span>
+</div>
+`;
+
+exports[`should select DOM elements 5`] = `
+<span
+  id="baz"
+>
+  <button
+    id="bar"
+  >
+    
+  </button>
+</span>
+`;
+
+exports[`should select DOM elements 6`] = `
+<span
+  id="baz"
+>
+  <button
+    id="bar"
+  >
+    
+  </button>
+</span>
+`;
