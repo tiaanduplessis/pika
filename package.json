@@ -1,6 +1,6 @@
 {
   "name": "@tiaanduplessis/pika",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Efficient DOM element selection",
   "license": "MIT",
   "repository": {
@@ -12,7 +12,9 @@
   "main": "dist/pika.js",
   "browser": "dist/pika.js",
   "jsnext:main": "dist/pika.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "standard 'src/**/*.js'",
@@ -25,7 +27,11 @@
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "babel": {
-    "presets": [["env"]]
+    "presets": [
+      [
+        "env"
+      ]
+    ]
   },
   "devDependencies": {
     "jest": "^20.0.1",
