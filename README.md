@@ -60,9 +60,9 @@
 ## Install
 
 ```sh
-$ npm install pika
+$ npm install @tiaanduplessis/pika
 # OR
-$ yarn add pika
+$ yarn add @tiaanduplessis/pika
 ```
 
 ## Usage
