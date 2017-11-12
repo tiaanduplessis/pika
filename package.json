@@ -11,7 +11,7 @@
   "bugs": "https://github.com/tiaanduplessis/pika",
   "main": "dist/pika.js",
   "browser": "dist/pika.js",
-  "jsnext:main": "dist/pika.es.js",
+  "module": "dist/pika.es.js",
   "files": [
     "dist"
   ],
