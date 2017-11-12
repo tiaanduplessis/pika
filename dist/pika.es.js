@@ -1,14 +1,18 @@
-const SELECTOR_REGEX = /^[#.\w]{1}\w+$/
+var SELECTOR_REGEX = /^[#.\w]{1}\w+$/;
 
-const toArrayOrElement = function (nodes, first) {
+var toArrayOrElement = function (nodes, first) {
   if (nodes.length === 1 && first) {
     return nodes[0]
   }
   return Array.from(nodes)
-}
+};
 
-const pika = function (selector = '', options = { context: document, first: false }) {
-  const { context, first } = options
+var pika = function (selector, options) {
+  if ( selector === void 0 ) selector = '';
+  if ( options === void 0 ) options = { context: document, first: false };
+
+  var context = options.context;
+  var first = options.first;
 
   if (!selector.length) {
     throw new Error('no selector provided')
@@ -23,13 +27,13 @@ const pika = function (selector = '', options = { context: document, first: fals
   }
 
   if (selector.match(SELECTOR_REGEX)) {
-    const prefix = selector.slice(0, 1)
+    var prefix = selector.slice(0, 1);
 
     if (prefix.toLowerCase() !== prefix.toUpperCase()) {
       return toArrayOrElement(context.getElementsByTagName(selector), first)
     }
 
-    const name = selector.slice(1)
+    var name = selector.slice(1);
 
     if (prefix === '#') {
       return toArrayOrElement([context.getElementById(name)], first)
@@ -41,6 +45,6 @@ const pika = function (selector = '', options = { context: document, first: fals
   }
 
   return toArrayOrElement(context.querySelectorAll(selector), first)
-}
+};
 
-export default pika
+export default pika;

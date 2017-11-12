@@ -5,13 +5,18 @@ exports[`should select DOM elements 1`] = `
   <div
     class="foo"
   >
+    
+      
     <span
       id="baz"
     >
+      
+      
       <button
         id="bar"
       >
         
+    
       </button>
     </span>
   </div>
@@ -21,57 +26,81 @@ exports[`should select DOM elements 1`] = `
 exports[`should select DOM elements 2`] = `<head />`;
 
 exports[`should select DOM elements 3`] = `
-<div
-  class="foo"
->
-  <span
-    id="baz"
+Array [
+  <div
+    class="foo"
   >
-    <button
-      id="bar"
+    
+      
+    <span
+      id="baz"
     >
       
-    </button>
-  </span>
-</div>
+      
+      <button
+        id="bar"
+      >
+        
+    
+      </button>
+    </span>
+  </div>,
+]
 `;
 
 exports[`should select DOM elements 4`] = `
-<div
-  class="foo"
->
+Array [
+  <div
+    class="foo"
+  >
+    
+      
+    <span
+      id="baz"
+    >
+      
+      
+      <button
+        id="bar"
+      >
+        
+    
+      </button>
+    </span>
+  </div>,
+]
+`;
+
+exports[`should select DOM elements 5`] = `
+Array [
   <span
     id="baz"
   >
+    
+      
     <button
       id="bar"
     >
       
-    </button>
-  </span>
-</div>
-`;
-
-exports[`should select DOM elements 5`] = `
-<span
-  id="baz"
->
-  <button
-    id="bar"
-  >
     
-  </button>
-</span>
+    </button>
+  </span>,
+]
 `;
 
 exports[`should select DOM elements 6`] = `
-<span
-  id="baz"
->
-  <button
-    id="bar"
+Array [
+  <span
+    id="baz"
   >
     
-  </button>
-</span>
+      
+    <button
+      id="bar"
+    >
+      
+    
+    </button>
+  </span>,
+]
 `;

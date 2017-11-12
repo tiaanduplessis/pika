@@ -1,6 +1,6 @@
 {
   "name": "@tiaanduplessis/pika",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Efficient DOM element selection",
   "license": "MIT",
   "repository": {
@@ -22,8 +22,7 @@
     "build": "bili",
     "start": "npm run test",
     "pretest": "npm run format && npm run lint:fix",
-    "format": "prettier --print-width 100 --semi false --single-quote --write 'src/**/*.js'",
-    "precommit": "npm test"
+    "format": "prettier --print-width 100 --semi false --single-quote --write 'src/**/*.js'"
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "babel": {
@@ -35,10 +34,9 @@
   },
   "devDependencies": {
     "jest": "^21.2.1",
-    "standard": "^10.0.2",
-    "babel-preset-env": "^1.4.0",
-    "bili": "^0.18.1",
-    "husky": "^0.14.3",
-    "prettier": "~1.7.4"
+    "standard": "^10.0.3",
+    "babel-preset-env": "^1.6.1",
+    "bili": "^0.18.2",
+    "prettier": "~1.8.2"
   }
 }

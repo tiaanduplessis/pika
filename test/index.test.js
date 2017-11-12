@@ -16,5 +16,5 @@ test('should select DOM elements', () => {
   expect(pika('div')).toMatchSnapshot()
   expect(pika('.foo')).toMatchSnapshot()
   expect(pika('#baz')).toMatchSnapshot()
-  expect(pika('span', { context: pika('.foo') })).toMatchSnapshot()
+  expect(pika('span')).toMatchSnapshot()
 })

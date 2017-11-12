@@ -1,5 +1,3 @@
-
-
 <div align="center">
   <img src="http://images5.fanpop.com/image/photos/30600000/Pikachu-pikachu-30613394-200-200.gif" alt=""/>
 </div>
@@ -20,6 +18,9 @@
   </a>
   <a href="https://github.com/prettier/prettier">
     <img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square" alt="prettier code formatting" />
+  </a>
+    <a href="https://greenkeeper.io/">
+    <img src="https://badges.greenkeeper.io/tiaanduplessis/pika.svg" alt="Greenkeeper" />
   </a>
   <a href="https://travis-ci.org/tiaanduplessis/pika">
     <img src="https://img.shields.io/travis/tiaanduplessis/pika.svg?style=flat-square" alt="travis ci build status" />
@@ -59,8 +60,6 @@
 
 ## Install
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/pika.svg)](https://greenkeeper.io/)
-
 ```sh
 $ npm install @tiaanduplessis/pika
 # OR
@@ -91,6 +90,8 @@ You can optionally specify your own context(defaults to `document`):
 pika('span', { context: pika('#foo') })
 
 ```
+
+If the `first` option is specified and their is only one element that matches the selector, that element will be returned instead of a array.
 
 ## Contributing
 
