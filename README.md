@@ -59,6 +59,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/pika.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install @tiaanduplessis/pika
 # OR
