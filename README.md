@@ -3,7 +3,7 @@
 </div>
 <h1 align="center">pika</h1>
 <div align="center">
-  <strong>Efficient DOM element selection</strong>
+  <strong>Efficient DOM element selection in 466 bytes (gzipped)</strong>
 </div>
 <br>
 <div align="center">
