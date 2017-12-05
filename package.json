@@ -37,6 +37,6 @@
     "standard": "^10.0.3",
     "babel-preset-env": "^1.6.1",
     "bili": "^0.18.2",
-    "prettier": "~1.8.2"
+    "prettier": "~1.9.0"
   }
 }
