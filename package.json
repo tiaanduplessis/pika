@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "jest": "^21.2.1",
-    "standard": "^10.0.3",
+    "standard": "^11.0.0",
     "babel-preset-env": "^1.6.1",
     "bili": "^0.18.2",
     "prettier": "~1.8.2"
