@@ -12,31 +12,24 @@
   "main": "dist/pika.js",
   "browser": "dist/pika.js",
   "module": "dist/pika.es.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "test": "jest",
-    "lint": "standard 'src/**/*.js'",
-    "lint:fix": "npm run lint -- --fix",
-    "build": "bili",
-    "start": "npm run test",
-    "pretest": "npm run format && npm run lint:fix",
-    "format": "prettier --print-width 100 --semi false --single-quote --write 'src/**/*.js'"
+    "test": "npm run lint && jest",
+    "lint": "standard --fix",
+    "build": "microbundle"
   },
-  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
-  "babel": {
-    "presets": [
-      [
-        "env"
-      ]
-    ]
-  },
+  "author": "Tiaan du Plessis",
+
   "devDependencies": {
-    "jest": "^22.0.0",
-    "standard": "^11.0.0",
     "babel-preset-env": "^1.6.1",
-    "bili": "^0.19.0",
-    "prettier": "~1.8.2"
+    "jest": "^22.4.3",
+    "microbundle": "^0.4.4",
+    "standard": "^11.0.0"
+  },
+  "babel": {
+    "presets": [["env"]]
+  },
+  "standard": {
+    "ignore": ["dist"]
   }
 }
