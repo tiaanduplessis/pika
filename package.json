@@ -1,6 +1,6 @@
 {
   "name": "@tiaanduplessis/pika",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Efficient DOM element selection",
   "license": "MIT",
   "repository": {
@@ -12,14 +12,15 @@
   "main": "dist/pika.js",
   "browser": "dist/pika.js",
   "module": "dist/pika.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "npm run lint && jest",
     "lint": "standard --fix",
     "build": "microbundle --name pika"
   },
   "author": "Tiaan du Plessis",
-
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
     "jest": "^22.4.3",
@@ -27,10 +28,16 @@
     "standard": "^11.0.0"
   },
   "babel": {
-    "presets": [["env"]]
+    "presets": [
+      [
+        "env"
+      ]
+    ]
   },
   "standard": {
-    "ignore": ["dist"],
+    "ignore": [
+      "dist"
+    ],
     "env": {
       "jest": true
     }
