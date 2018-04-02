@@ -16,7 +16,7 @@
   "scripts": {
     "test": "npm run lint && jest",
     "lint": "standard --fix",
-    "build": "microbundle"
+    "build": "microbundle --name pika"
   },
   "author": "Tiaan du Plessis",
 
@@ -30,6 +30,9 @@
     "presets": [["env"]]
   },
   "standard": {
-    "ignore": ["dist"]
+    "ignore": ["dist"],
+    "env": {
+      "jest": true
+    }
   }
 }
