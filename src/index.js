@@ -7,9 +7,7 @@ const toArrayOrElement = function (nodes, first) {
   return Array.from(nodes)
 }
 
-const pika = function (selector = '', options = { context: document, first: false }) {
-  const { context, first } = options
-
+const pika = function (selector = '', { context = document, first = false } = {}) {
   if (!selector.length) {
     throw new Error('pika: No selector was provided')
   }
