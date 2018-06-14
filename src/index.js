@@ -11,7 +11,7 @@ const pika = function (selector = '', options = { context: document, first: fals
   const { context, first } = options
 
   if (!selector.length) {
-    throw new Error('no selector provided')
+    throw new Error('pika: No selector was provided')
   }
 
   if (selector === 'body') {
